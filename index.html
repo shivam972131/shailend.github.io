@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shailendra Singh Portfolio</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#1e1e1e;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+header h1{
+margin:0;
+font-size:40px;
+}
+
+nav{
+background:#333;
+text-align:center;
+padding:15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-size:18px;
+}
+
+nav a:hover{
+color:#00c3ff;
+}
+
+section{
+padding:50px;
+max-width:900px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.skill-box{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+form{
+display:flex;
+flex-direction:column;
+}
+
+form input, textarea{
+padding:12px;
+margin:10px 0;
+font-size:16px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:12px;
+background:#00aaff;
+border:none;
+color:white;
+font-size:16px;
+cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:#0077aa;
+}
+
+footer{
+background:#1e1e1e;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+#msg{
+color:green;
+font-weight:bold;
+text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Shailendra Singh</h1>
+<p>Content Writer | Typist | Freelancer</p>
+
+</header>
+
+
+<nav>
+
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+Hello, my name is <b>Shailendra Singh</b>.  
+I am a graduate and I work as a <b>content writer and typist</b>.  
+
+I create content for different clients including:
+
+• Blog Writing  
+• Article Writing  
+• Website Content  
+• Fast and Accurate Typing  
+• PDF to Word Typing  
+
+I always try to deliver quality work to my clients on time.
+
+</p>
+
+</section>
+
+
+
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="skills">
+
+<div class="skill-box">
+<h3>Content Writing</h3>
+<p>Blog writing, article writing and SEO content.</p>
+</div>
+
+<div class="skill-box">
+<h3>English Typing</h3>
+<p>Fast and accurate typing for documents and data.</p>
+</div>
+
+<div class="skill-box">
+<h3>PDF to Word</h3>
+<p>Professional document conversion and formatting.</p>
+</div>
+
+<div class="skill-box">
+<h3>Client Work</h3>
+<p>Handling client projects and delivering quality work.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="services">
+
+<h2>My Services</h2>
+
+<p>
+
+✔ Content Writing for Blogs and Websites  
+✔ Article Writing  
+✔ Typing Work  
+✔ PDF to Word Conversion  
+✔ Data Entry Work  
+
+</p>
+
+</section>
+
+
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form onsubmit="sendMessage(); return false;">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+<p id="msg"></p>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 Shailendra Singh | Portfolio Website</p>
+
+</footer>
+
+
+
+<script>
+
+function sendMessage(){
+
+document.getElementById("msg").innerHTML =
+"Thank you! Your message has been received.";
+
+}
+
+</script>
+
+</body>
+</html>
